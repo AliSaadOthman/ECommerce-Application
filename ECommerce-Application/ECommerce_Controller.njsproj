@@ -2,7 +2,7 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>ECommerce_Controllers</Name>
+    <Name>ECommerce_Controller</Name>
     <RootNamespace>ECommerce-Application</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -29,9 +29,13 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".babelrc" />
+    <Content Include=".eslintrc.json" />
+    <Content Include="Controllers\Authentication.js" />
     <Content Include="index.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="swagger-config.yaml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
